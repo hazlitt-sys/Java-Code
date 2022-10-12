@@ -1,0 +1,24 @@
+public class Solution {
+    static int b,h,area;
+    public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    int b = scan.nextInt();
+    int h = scan.nextInt();
+  if(b<=0 || h<=0)    
+  {  
+          try 
+          {
+             throw new ArithmeticException(); 
+          }
+          catch(ArithmeticException e)
+          {
+              System.out.println("java.lang.Exception: Breadth and height must be positive");
+          }
+  }
+  else
+  {
+      area= b*h;
+      System.out.println(area); 
+  }
+}
+}
